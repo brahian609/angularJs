@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="MyFirstApp">
+    <head>
+        <title>Angular hide show</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="controller.js"></script>
+    </head>
+    <body ng-controller="FirstController">
+    {{nombre}}
+    <p>
+        <strong>Valor padre:</strong>
+        {{$parent.nombre}}
+    </p>
+    <div ng-model="ChildController">
+        <p>
+            <strong>Valor hijo:</strong>
+            {{nombre}}
+        </p>
+        <input type="text" ng-model="nombre"/>
+    </div>
+    </body>
+</html>

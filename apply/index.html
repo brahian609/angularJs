@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html ng-app="mainModule">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular $apply</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+        <script src="controller.js"></script>
+    </head>
+    <body ng-controller="applyController">
+    <h1>{{nombre}}</h1>
+    <button id="boton">Haz Click</button>
+    <button ng-click="nombre = 'Steveen'">Cambiar</button>
+    </body>
+</html>

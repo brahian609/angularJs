@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app>
+    <head>
+        <style>
+            .hover{
+                background-color: rgb(200,50,50);
+            }
+            .no-hover{
+                background-color: rgb(50,200,50);
+            }
+        </style>
+        <title>Angular hide show</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    </head>
+    <body>
+    <button ng-mouseover="bandera = true" ng-mouseout="bandera = false" ng-class="{'hover': bandera, 'no-hover': !bandera}">Hover me</button>
+    <span ng-show="bandera">Click me</span>
+    <p>
+        {{bandera | json}}
+    </p>
+    </body>
+</html>
